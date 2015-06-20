@@ -1,10 +1,12 @@
 
 config/config.js
 api/controllers/frontController.js
-
+assets
+views
 
 node_modules
 bower_components
+config/locales/*.json
 
 .tmp
 dump.rdb
@@ -23,3 +25,7 @@ npm-debug.log
 nbproject
 .idea
 .node_history
+
+.rebooted
+.gitignore
+application.log
