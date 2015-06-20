@@ -1,8 +1,5 @@
 
 config/config.js
-api/controllers/frontController.js
-assets
-views
 
 node_modules
 bower_components
