@@ -34,16 +34,16 @@
 					<!-- Thumb Items -->
 						<% for(var i=0; i<projects.length; i++) {
 
-							var toto = 100 ;
-							
-
 							%>
 	                    
                                
-                                <%if(projects[i].img) { %>
-                                    <article class="item thumb"  data-width="<%= toto %>">
+                                <%if(projects[i].img) { 
+									var finalwidth = projects[i].img.finalwidth || 212 ;
+															
+								%>
+                                    <article class="item thumb"  data-width="<%= finalwidth %>">
 										<h2><%= projects[i].title %></h2>
-										<a href="/file/image/originalsize/<%= projects[i].img.filename %>" class="image"><img src="/file/image/tibophoto/<%= projects[i].img.filename %>" alt="<%= projects[i].img.alt %>"></a>
+										<a href="/file/image/originalsize/<%= projects[i].img.filename %>" class="image"><img src="/file/image/tibophoto/<%= projects[i].img.filename %>" alt="<%= projects[i].title %>"</a>
 									</article>
                                 <% } %>
                     
