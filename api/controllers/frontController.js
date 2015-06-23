@@ -93,6 +93,7 @@ module.exports={
 				scripturl:'portfo.js',
 				menu:'portfo',
 				marked:marked,
+				moment:moment,
 				domain : sails.config.COMPANY_DOMAIN,
 			})
 			// res.status(200).view('blog',{

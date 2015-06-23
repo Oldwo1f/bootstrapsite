@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<!--
+ * A Design by GraphBerry
+ * Author: GraphBerry
+ * Author URL: http://graphberry.com
+ * License: http://graphberry.com/pages/license
+-->
+<html lang="en">
+    
+    <head>
+        <meta charset=utf-8>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title><%-('SEO_MOM')%></title>
+        <!-- Load Roboto font -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <!-- Load css styles -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/pluton.css" />
+        <!--[if IE 7]>
+            <link rel="stylesheet" type="text/css" href="css/pluton-ie7.css" />
+        <![endif]-->
+        <link rel="stylesheet" type="text/css" href="css/jquery.cslider.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
+        <link rel="stylesheet" type="text/css" href="css/animate.css" />
+        <!-- Fav and touch icons -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72.png">
+        <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57.png">
+        <link rel="shortcut icon" href="images/ico/favicon.ico">
+    </head>
+    
+    <body>
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a href="#" class="brand">
+                        <!-- <img src="images/logo.png" width="120" height="40" alt="Logo" /> -->
+                        <div class="momlogo"></div>
+
+                        <!-- This is website logo -->
+                    </a>
+                    <!-- Navigation button, visible on small resolution -->
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <i class="icon-menu"></i>
+                    </button>
+                    <!-- Main navigation -->
+                    <div class="nav-collapse collapse pull-right">
+                        <ul class="nav" id="top-navigation">
+                            <li class="active"><a href="#home"><%- __('Home') %></a></li>
+                            <li><a href="#service"><%- __('Services') %></a></li>
+                            <li><a href="#portfolio"><%- __('Portfolio') %></a></li>
+                            <li><a href="#about"><%- __('About') %></a></li>
+                            <li><a href="#clients"><%- __('Clients') %></a></li>
+                            <li><a href="#price"><%- __('Price') %></a></li>
+                            <li><a href="#contact"><%- __('Contact') %></a></li>
+                        </ul>
+                    </div>
+                    <!-- End main navigation -->
+                </div>
+            </div>
+        </div>
+        <!-- Start home section -->
+        <div id="home">
+            <!-- Start cSlider -->
+            <div id="da-slider" class="da-slider">
+                <div class="triangle"></div>
+                <!-- mask elemet use for masking background image -->
+                <div class="mask"></div>
+                <!-- All slides centred in container element -->
+                <div class="container">
+                    <!-- Start first slide -->
+                    <div class="da-slide">
+                        <h2 class="fittext2"><%- __('Des sites internet multiplatforme') %></h2>
+                        <h4><%- __('Clean & responsive') %></h4>
+                        <p><%- __('slider-text1') %>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.</p>
+                        <a href="#" class="da-link button"><%- __('Contactez nous') %></a>
+                        <div class="da-img">
+                            <img src="images/Slider01.png" alt="image01" width="320">
+                        </div>
+                    </div>
+                    <!-- End first slide -->
+                    <!-- Start second slide -->
+                    <div class="da-slide">
+                        <h2><%- __("Plus qu'une administration") %></h2>
+                        <h4><%- __('Easy to use') %></h4>
+                        <p><%- __('slider-text2') %>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                        <a href="#" class="da-link button"><%- __('Contactez nous') %></a>
+                        <div class="da-img">
+                            <img src="images/Slider03.png" width="320" alt="image03">
+                        </div>
+                    </div>
+                    <!-- End second slide -->
+                    <!-- Start third slide -->
+                    <div class="da-slide">
+                        <h2><%- __('Le temps réel à portée de main') %></h2>
+                        <h4 id="lheure"></h4>
+                        <p><%- __('slider-text3') %>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                        <a href="#" class="da-link button"><%- __('Contactez nous') %></a>
+                        <div class="da-img">
+                            <img src="images/Slider02.png" width="320" alt="image02">
+                        </div>
+                    </div>
+                    <!-- Start third slide -->
+                    <!-- Start cSlide navigation arrows -->
+                    <div class="da-arrows">
+                        <span class="da-arrows-prev"></span>
+                        <span class="da-arrows-next"></span>
+                    </div>
+                    <!-- End cSlide navigation arrows -->
+                </div>
+            </div>
+        </div>
+        <!-- End home section -->
+        <!-- Service section start -->
+        <div class="section primary-section" id="service">
+            <div class="container">
+                <!-- Start title section -->
+                <div class="title">
+                    <h1><%- __('service-title') %></h1>
+                    <!-- Section's title goes here -->
+                    <p><%- __('sercice-text') %></p>
+                    <!--Simple description for section goes here. -->
+                </div>
+                <div class="row-fluid">
+                	<div class="span4">
+                		<div class="centered service">
+                            <div class="zoom-in">
+                                <div class="deco decoconcept"></div>
+                                
+                            </div>
+                            <h3><%- __('Conception') %></h3>
+                            <p><%- __('skill_conception') %></p>
+                        </div>
+                	</div>
+                    <div class="span4">
+
+                        <div class="centered service">
+                            <div class="zoom-in">
+                                <!-- <img class="img-circle" src="images/Service1.png" alt="service 1"> -->
+                                <div class="deco decosite"></div>
+                            </div>
+                            <h3><%- __('Site web') %></h3>
+                            <p><%- __('skill_siteweb') %></p>
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <div class="centered service">
+                            <div class="zoom-in">
+                                <!-- <img class="img-circle" src="images/Service2.png" alt="service 2" /> -->
+                                <div class="deco decowebapp"></div>
+                            </div>
+                            <h3><%- __('Web app') %></h3>
+                            <p><%- __('skill_webapp') %></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-fluid">
+                    <div class="span4">
+                        <div class="centered service">
+                            <div class="zoom-in">
+                                <!-- <img class="img-circle" src="images/Service1.png" alt="service 1"> -->
+                                <div class="deco decoapi"></div>
+                            </div>
+                            <h3><%- __('Réseau sociaux') %></h3>
+                            <p><%- __('skill_social') %></p>
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <div class="centered service">
+                            <div class="zoom-in">
+                                <!-- <img class="img-circle" src="images/Service2.png" alt="service 2" /> -->
+                                <div class="deco decoperf"></div>
+                            </div>
+                            <h3><%- __('Performance') %></h3>
+                            <p><%- __('skill_perf') %></p>
+                        </div>
+                    </div>
+                        
+                    <div class="span4">
+                        <div class="centered service">
+                            <div class="zoom-in">
+                                <div class="deco decowebpub"></div>
+                            </div>
+                            <h3><%- __('Api') %></h3>
+                            <p><%- __('skill_api') %></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service section end -->
+        <!-- Portfolio section start -->
+        <div class="section secondary-section " id="portfolio">
+            <div class="triangle"></div>
+            <div class="container">
+                <div class=" title">
+                    <h1><%- __('portfo-title') %></h1>
+                    <p><%- __('portfo-text') %></p>
+                </div>
+                <!-- <ul class="nav nav-pills">
+                    <li class="filter" data-filter="all">
+                        <a href="#noAction">All</a>
+                    </li>
+                    <li class="filter" data-filter="web">
+                        <a href="#noAction">Web</a>
+                    </li>
+                    <li class="filter" data-filter="photo">
+                        <a href="#noAction">Photo</a>
+                    </li>
+                    <li class="filter" data-filter="identity">
+                        <a href="#noAction">Identity</a>
+                    </li>
+                </ul> -->
+                <!-- Start details for portfolio project 1 -->
+                <div id="single-project">
+                    <div id="slidingDiv" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/proj/libo.jpg" alt="project libo" />
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Site vitrine Lí&Bo</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Client</span>Aurélie & Thibault</div>
+                                    <div>
+                                        <span>Date</span>July 2015</div>
+                                    <div>
+                                        <span>Link</span>http://examplecomp.com</div>
+                                </div>
+                                <p>Une petite vitrine, simple et épurée pour démarrer leur auto-entreprise de photographie.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 1 -->
+                    <!-- Start details for portfolio project 2 -->
+                    <div id="slidingDiv1" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/proj/nutri.jpg" alt="project 2">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Web app Nutrimarketing</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Client</span>Nutrimarketing</div>
+                                    <div>
+                                        <span>Date</span>2015</div>
+                                    <div>
+                                        <span>Link</span>http://examplecomp.com</div>
+                                </div>
+                                <p>Une application privée très complète sur le thème de l'agroalimentaire et de la nutritions.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 2 -->
+                    <!-- Start details for portfolio project 3 -->
+                    <div id="slidingDiv2" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/proj/nutriprint.jpg" alt="project 3">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Print : Nutrimarketing</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Client</span>Nutrimarketing</div>
+                                    <div>
+                                        <span>Date</span>Juillet 2014</div>
+                                    <div>
+                                        <span>Link</span>http://examplecomp.com</div>
+                                </div>
+                                <p>Réalisation d'un logo et d'une identité visuelle forte avec tout les documents associés: Papier à lettre, carte de visite, etc</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 3 -->
+                    <!-- Start details for portfolio project 4 -->
+                    <div id="slidingDiv3" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/proj/arbatou.jpg" alt="project 4">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Site web Arbatou</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Client</span>Arbatou</div>
+                                    <div>
+                                        <span>Date</span>Août 2014</div>
+                                    <div>
+                                        <span>Link</span>http://arbatou.fr</div>
+                                </div>
+                                <p>Grimper dans tou type d'arbre avec Arbatou. Du simple parcours sportif à la nuit perché, en passant par le dejeuner en hauteur, Arbatou vous fait décrouvrir les arbres sous un autre angle.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 4 -->
+                    <!-- Start details for portfolio project 5 -->
+                    <div id="slidingDiv4" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/proj/ml.jpg" alt="project 5">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Site vitrine : Mission Locale Nord-est-77</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Client</span>Mission Locale Nord-est-77</div>
+                                    <div>
+                                        <span>Date</span>Août 2014</div>
+                                    <div>
+                                        <span>Link</span>http://mission-locale-nordest77.fr/</div>
+                                </div>
+                                <p>Site vitre pour la mission locale de Meaux et des villes voisines.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 5 -->
+                    <!-- Start details for portfolio project 6 -->
+                    <div id="slidingDiv5" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/proj/flyin.jpg" alt="project 6">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Flyin LFBK</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Client</span>Flyin LFBK</div>
+                                    <div>
+                                        <span>Date</span>Tout les ans</div>
+                                    <div>
+                                        <span>Link</span>http://examplecomp.com</div>
+                                </div>
+                                <p>Réalisation de l'affiche du Célèbre meeting aerien LFBK. Chaque année, le Flyin LFBK nous renouvelle ca confience pour la création de son affiche.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 6 -->
+                    <!-- Start details for portfolio project 7 -->
+                    <div id="slidingDiv6" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/proj/street.jpg" alt="project 7">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Site web : Streetcolors</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Client</span>Streetcolors</div>
+                                    <div>
+                                        <span>Date</span>Juin 2015</div>
+                                    <div>
+                                        <span>Link</span>http://streetcolors.fr</div>
+                                </div>
+                                <p>Faire du graffiti de manière légale. C'est ce qui à amenner ces jeunes de Chateau Thierry à monté cette association. Contactez les afin qu'il redonnes de la couleur à vos murs et plafonds.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 7 -->
+                    <!-- Start details for portfolio project 8 -->
+                    <div id="slidingDiv7" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/proj/niko.jpg" alt="project 8">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Vitrine Nikola Folio</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Client</span>Nikola Folio</div>
+                                    <div>
+                                        <span>Date</span>Juin 2014</div>
+                                    <div>
+                                        <span>Link</span>nikolafolio.com</div>
+                                </div>
+                                <p>Petit site vitre pour un édiant en fin de master commercial.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 8 -->
+                    <!-- Start details for portfolio project 9 -->
+                    <div id="slidingDiv8" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/proj/dhardiville.jpg" alt="project 9">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Vitrine : Roland Dhardivillé</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Client</span>Roland Dhardivillé</div>
+                                    <div>
+                                        <span>Date</span>Juillet 2011</div>
+                                    <div>
+                                        <span>Link</span>http://dhardiville.com</div>
+                                </div>
+                                <p>Site vitrine pour un artiste créateur de luminaire. Roland Dhardivillé travail uniquement à partir de matériaux de récupération.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 9 -->
+                    <ul id="portfolio-grid" class="thumbnails row">
+                        <li class="span4 mix web">
+                            <div class="thumbnail">
+                                <img src="images/proj/libo.jpg" alt="project 1">
+                                <a href="#single-project" class="more show_hide" rel="#slidingDiv">
+                                    <i class="icon-plus"></i>
+                                </a>
+                                <h3>Li&Bo</h3>
+                                <p>Vitrine</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix photo">
+                            <div class="thumbnail">
+                                <img src="images/proj/nutri.jpg" alt="project 2">
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv1">
+                                    <i class="icon-plus"></i>
+                                </a>
+                                <h3>Nutrimarketing</h3>
+                                <p>Web app</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix identity">
+                            <div class="thumbnail">
+                                <img src="images/proj/nutriprint.jpg" alt="project 3">
+                                <a href="#single-project" class="more show_hide" rel="#slidingDiv2">
+                                    <i class="icon-plus"></i>
+                                </a>
+                                <h3>Nutrimarketing</h3>
+                                <p>print</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix web">
+                            <div class="thumbnail">
+                                <img src="images/proj/arbatou.jpg" alt="project 4">
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv3">
+                                    <i class="icon-plus"></i>
+                                </a>
+                                <h3>Arbatou</h3>
+                                <p>Site web</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix photo">
+                            <div class="thumbnail">
+                                <img src="images/proj/ml.jpg" alt="project 5">
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv4">
+                                    <i class="icon-plus"></i>
+                                </a>
+                                <h3>Mission locale Nord-est-77</h3>
+                                <p>Vitrine</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix identity">
+                            <div class="thumbnail">
+                                <img src="images/proj/flyin.jpg" alt="project 6">
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv5">
+                                    <i class="icon-plus"></i>
+                                </a>
+                                <h3>Flyin LFBK</h3>
+                                <p>Affiches</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix web">
+                            <div class="thumbnail">
+                                <img src="images/proj/street.jpg" alt="project 7" />
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv6">
+                                    <i class="icon-plus"></i>
+                                </a>
+                                <h3>Streetcolors</h3>
+                                <p>Site web</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix photo">
+                            <div class="thumbnail">
+                                <img src="images/proj/niko.jpg" alt="project 8">
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv7">
+                                    <i class="icon-plus"></i>
+                                </a>
+                                <h3>Nikola Folio</h3>
+                                <p>Site vitrine</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix identity">
+                            <div class="thumbnail">
+                                <img src="images/proj/dhardiville.jpg" alt="project 9">
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv8">
+                                    <i class="icon-plus"></i>
+                                </a>
+                                <h3>Rolland Dhardivillé</h3>
+                                <p>Vitrine</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio section end -->
+        <!-- About us section start -->
+        <div class="section primary-section" id="about">
+            <div class="triangle"></div>
+            <div class="container">
+                <div class="title">
+                    <h1><%- __('about-title') %></h1>
+                    <p><%- __('about-text') %></p>
+                </div>
+                <div class="row-fluid team">
+                	<div class="span2"></div>
+                    <div class="span4" id="first-person">
+                        <div class="thumbnail">
+                            <img src="images/Team1.png" alt="team 1">
+                            <h3><%- __('Alexis Momcilovic') %></h3>
+                            <ul class="social">
+                                <li>
+                                    <a target="_BLANK" href="https://twitter.com/Beni_leduc?lang=fr">
+                                        <span class="icon-twitter-circled"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_BLANK" href="https://github.com/Oldwo1f">
+                                        <span class="icon-github-circled"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_BLANK" href="https://plus.google.com/u/0/111332695009002851558/posts">
+                                        <span class="icon-gplus-circled"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_BLANK" href="https://fr.pinterest.com/alexismomcilovi/">
+                                        <span class="icon-pinterest-circled"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="mask">
+                                <h2><%- __('Gérant et fondateur') %></h2>
+                                <p><%- __('textalexis') %></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span4" id="second-person">
+                        <div class="thumbnail">
+                            <img src="images/Team2.png" alt="team 1">
+                            <h3>Thibault Charpentier</h3>
+                            <ul class="social">
+                                <li>
+                                    <a target="_BLANK" href="">
+                                        <span class="icon-facebook-circled"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_BLANK" href="https://plus.google.com/u/0/100228074852434020818/posts">
+                                        <span class="icon-gplus-circled"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="mask">
+                                <h2><%- __('Commercial') %></h2>
+                                <p><%- __('texttibo') %></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text centered">
+                    <h3> <%- __('About Us') %></h3>
+                    <p><%- __('About Us - text') %></p>
+                </div>
+                <h3><%- __('Skills') %></h3>
+                <div class="row-fluid">
+                    <div class="span6">
+                        <ul class="skills">
+                            <li>
+                                <span class="bar" data-width="80%"></span>
+                                <h3>Web Design</h3>
+                            </li>
+                            <li>
+                                <span class="bar" data-width="95%"></span>
+                                <h3>Html & Css</h3>
+                            </li>
+                            <li>
+                                <span class="bar" data-width="99%"></span>
+                                <h3>Javascript & jQuery</h3>
+                            </li>
+                            <li>
+                                <span class="bar" data-width="84%"></span>
+                                <h3>Node.js</h3>
+                            </li>
+                            <li>
+                                <span class="bar" data-width="78%"></span>
+                                <h3>API - privée & public</h3>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="span6">
+                    	<ul class="skills">
+                            <li>
+                                <span class="bar" data-width="80%"></span>
+                                <h3>Angular.js</h3>
+                            </li>
+                            <li>
+                                <span class="bar" data-width="56%"></span>
+                                <h3>Photographie</h3>
+                            </li>
+                            <li>
+                                <span class="bar" data-width="68%"></span>
+                                <h3>SEO & SEM</h3>
+                            </li>
+                            <li>
+                                <span class="bar" data-width="98%"></span>
+                                <h3>Sails.js</h3>
+                            </li>
+                            <li>
+                                <span class="bar" data-width="40%"></span>
+                                <h3>Elastic search</h3>
+                            </li>
+                        </ul>
+                        <!-- <div class="highlighted-box center">
+                            <h1>We're Hiring</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, ullamcorper suscipit lobortis nisl ut aliquip consequat. I learned that we can do anything, but we can't do everything...</p>
+                            <button class="button button-sp">Join Us</button>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About us section end -->
+        <div class="section secondary-section">
+            <div class="triangle"></div>
+            <div class="container centered">
+                <p class="large-text"> <%- __('" La simplicité est la sophistication suprême. "') %></p>
+                <p class="large-text"> <%- __('Léonard De Vinci') %></p>
+                <!-- <a href="#" class="button">Purshase now</a> -->
+            </div>
+        </div>
+        <!-- Client section start -->
+        <!-- Client section start -->
+        <div id="clients">
+            <div class="section primary-section">
+                <div class="triangle"></div>
+                <div class="container">
+                    <div class="title">
+                        <h1><%- __('client-title') %></h1>
+                        <p><%- __('client-text') %></p>
+                    </div>
+                    <div class="row">
+                        <div class="span4">
+                            <div class="testimonial">
+                                <p>"<%- __('Client1text') %>"</p>
+                                <div class="whopic">
+                                    <div class="arrow"></div>
+                                    <!-- <img src="images/Client1.png" class="centered" alt="client 1"> -->
+                                    <strong><%- __('Client1name') %>
+                                        <small><%- __('Client1') %></small>
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span4">
+                            <div class="testimonial">
+                                <p>"<%- __('Client2text') %>"</p>
+                                <div class="whopic">
+                                    <div class="arrow"></div>
+                                    <!-- <img src="images/Client2.png" class="centered" alt="client 2"> -->
+                                    <strong><%- __('Client2name') %>
+                                        <small><%- __('Client2') %></small>
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span4">
+                            <div class="testimonial">
+                                <p>"<%- __('Client3text') %>"</p>
+                                <div class="whopic">
+                                    <div class="arrow"></div>
+                                    <!-- <img src="images/Client3.png" class="centered" alt="client 3"> -->
+                                    <strong><%- __('Client3name') %>
+                                        <small><%- __('Client3') %></small>
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                       
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section third-section">
+            <div class="container centered">
+                <div class="sub-section">
+                    <div class="title clearfix">
+                        <div class="pull-left">
+                            <h3><%- __('Nos clients') %></h3>
+                        </div>
+                        <ul class="client-nav pull-right">
+                            <li id="client-prev"></li>
+                            <li id="client-next"></li>
+                        </ul>
+                    </div>
+                    <ul class="row client-slider" id="clint-slider">
+                        <li>
+                            <a href="">
+                                <img src="images/clients/nutri.png" alt="client logo 1">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/clients/ml77.png" alt="client logo 2">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/clients/miam.png" alt="client logo 4">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/clients/rd.png" alt="client logo 5">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/clients/arbatou.png" alt="client logo 6">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/clients/street.png" alt="client logo 3">
+                            </a>
+                        </li>
+                       <!--  <li>
+                            <a href="">
+                                <img src="images/clients/ClientLogo04.png" alt="client logo 7">
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Price section start -->
+        <div id="price" class="section secondary-section">
+            <div class="container">
+                <div class="title">
+                    <h1><%- __('price-title') %></h1>
+                    <p><%- __('price-text') %></p>
+                </div>
+                <div class="price-table row-fluid">
+                    <div class="span4 price-column">
+                        <h3>Vitrine / Blog</h3>
+                        <ul class="list">
+                            <li class="price">500€-3000€</li>
+                            <li>Identitée <strong>visuelle</strong></li>
+                            <li><strong>Logo</strong></li>
+                            <li>Site web<strong> Multi</strong> Platform</li>
+                            <li>Administration<strong> MADMIN</strong></li>
+                            <li><strong>SEO</strong> de basique</li>
+                            <li>Hebergement <strong>Node.js</strong></li>
+                            <li>Server <strong>Ubuntu</strong></li>
+                        </ul>
+                        <a  class="button button-ps">+ 250€/ans</a>
+                    </div>
+                    <div class="span4 price-column">
+                        <h3>Site web</h3>
+                         <ul class="list">
+                            <li class="price">2000€-10000€</li>
+                            <li>Identitée <strong>visuelle</strong></li>
+                            <li><strong>Logo</strong></li>
+                            <li>Tournage <strong>vidéo</strong> / <strong>photo</strong></li>
+                            <li>Site web<strong> Multi</strong> Platform</li>
+                            <li>Administration<strong> MADMIN</strong></li>
+                            <li>Ajout de <strong>spécificité</strong> métier</li>
+                            <li>Espace <strong>membre</strong></li>
+                            <li><strong>SEO</strong> avancée</li>
+                            <li>Hebergement <strong>Node.js</strong></li>
+                            <li>Server <strong>Ubuntu</strong></li>
+                        </ul>
+                        <a  class="button button-ps">+ 500€/ans</a>
+                    </div>
+                    <div class="span4 price-column">
+                        <h3>Web app</h3>
+                         <ul class="list">
+                            <li class="price">+ 6000€</li>
+                            <li>Identitée <strong>visuelle</strong></li>
+                            <li><strong>Logo</strong></li>
+                            <li>Tournage <strong>vidéo</strong> / <strong>photo</strong></li>
+                            <li>Web app <strong>gmail like</strong></li>
+                            <li>Administration<strong> MADMIN</strong></li>
+                            <li>Ajout de <strong>spécificité</strong> métier</li>
+                            <li>Espace <strong>membre</strong></li>
+                            <li>Social <strong>login</strong></li>
+                            <li><strong>Réel</strong> time</li>
+                            <li><strong>SEO</strong> avancée</li>
+                            <li><strong>Big</strong> data</li>
+                            <li><strong>Elastic</strong> search</li>
+                            <li>Hebergement <strong>Node.js</strong></li>
+                            <li>Server <strong>Ubuntu</strong></li>
+                        </ul>
+                        <a  class="button button-ps">Selon trafic</a>
+                    </div>
+                </div>
+                <div class="centered">
+                    <p class="price-text"><%- __('Les tarif indiqués sont à titre indicatifs') %></p>
+                    <a href="#contact" class="button"><%- __('Contact Us') %></a>
+                </div>
+            </div>
+        </div>
+        <!-- Price section end -->
+        <!-- Newsletter section start -->
+        <div class="section third-section">
+            <div class="container newsletter">
+                <div class="sub-section">
+                    <div class="title clearfix">
+                        <div class="pull-left">
+                            <h3>Newsletter</h3>
+                        </div>
+                    </div>
+                </div>
+                <div id="success-subscribe" class="alert alert-success invisible">
+                    <strong>Well done!</strong>You successfully subscribet to our newsletter.</div>
+                <div class="row-fluid">
+                    <div class="span5">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    </div>
+                    <div class="span7">
+                    <form action="//ceca.us10.list-manage.com/subscribe/post?u=93c53aebd14896af588b33a52&amp;id=238c67f1d9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate inline-form" target="_blank" novalidate>
+                    <input type="email" value="" name="EMAIL"  class="span8 required email" id="mce-EMAIL">
+                    <button type="submit"  name="subscribe" id="mc-embedded-subscribe"class="button button-sp">Subscribe</button>
+                     
+                    <div style="position: absolute; left: -5000px;"><input type="text" name="b_93c53aebd14896af588b33a52_238c67f1d9" tabindex="-1" value=""></div>
+                    </div>
+                    </form>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Newsletter section end -->
+        <!-- Contact section start -->
+        <div id="contact" class="contact">
+            <div class="section secondary-section">
+                <div class="container">
+                    <div class="title">
+                        <h1><%- __('contact-title') %></h1>
+                        <p><%- __('contact-text') %></p>
+                    </div>
+                </div>
+                <div class="map-wrapper">
+                    <div class="map-canvas" id="map-canvas"><%- __('Loading map...') %></div>
+                    <div class="container">
+                        <div class="row-fluid">
+                            <div class="span5 contact-form centered">
+                                <h3><%- __('Say Hello') %></h3>
+                                <div id="successSend" class="alert alert-success invisible">
+                                    <%- __('<strong>Well done!</strong>Your message has been sent.') %></div>
+                                <div id="errorSend" class="alert alert-error invisible"><%- __('There was an error.') %></div>
+                                <form id="contact-form" action="php/mail.php">
+                                    <div class="control-group">
+                                        <div class="controls">
+                                            <input class="span12" type="text" id="name" name="name" placeholder="* <%- __('Your name...') %>" />
+                                            <div class="error left-align" id="err-name"><%- __('Please enter name.') %></div>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <div class="controls">
+                                            <input class="span12" type="email" name="email" id="email" placeholder="* <%- __('Your email...') %>" />
+                                            <div class="error left-align" id="err-email"><%- __('Please enter valid email adress.') %></div>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <div class="controls">
+                                            <textarea class="span12" name="comment" id="comment" placeholder="* <%- __('Comments...') %>"></textarea>
+                                            <div class="error left-align" id="err-comment"><%- __('Please enter your comment.') %></div>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <div class="controls">
+                                            <button id="send-mail" class="message-btn"><%- __('Send message') %></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="span9 center contact-info">
+                        <p class="info-mail"><%- __('contact@momcreation.fr') %> <span style="margin:0 10px;">|</span> <%- __('06 37 08 98 71') %></p>
+                    </div>
+                   <!--  <div class="row-fluid centered">
+                        <ul class="social">
+                            <li>
+                                <a href="">
+                                    <span class="icon-facebook-circled"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="icon-twitter-circled"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="icon-linkedin-circled"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="icon-pinterest-circled"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="icon-dribbble-circled"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="icon-gplus-circled"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- Contact section edn -->
+        <!-- Footer section start -->
+        <!-- <div class="footer">
+            <p>&copy; 2013 Theme by <a href="http://www.graphberry.com">GraphBerry</a>, <a href="http://goo.gl/NM84K2">Documentation</a></p>
+        </div> -->
+        <!-- Footer section end -->
+        <!-- ScrollUp button start -->
+        <div class="scrollup">
+            <a href="#">
+                <i class="icon-up-open"></i>
+            </a>
+        </div>
+        <!-- ScrollUp button end -->
+        <!-- Include javascript -->
+        <script src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.mixitup.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/modernizr.custom.js"></script>
+        <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+        <script type="text/javascript" src="js/jquery.cslider.js"></script>
+        <script type="text/javascript" src="js/jquery.placeholder.js"></script>
+        <script type="text/javascript" src="js/jquery.inview.js"></script>
+        <script type="text/javascript" src="js/moment.js"></script>
+        <!-- Load google maps api and call initializeMap function defined in app.js -->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&amp;callback=initializeMap"></script>
+        <!-- css3-mediaqueries.js for IE8 or older -->
+        <!--[if lt IE 9]>
+            <script src="js/respond.min.js"></script>
+        <![endif]-->
+        <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript">
+        console.log(moment().format('MMMM Do YYYY, h:mm:ss a'));
+
+        </script>
+    </body>
+</html>

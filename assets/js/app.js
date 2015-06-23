@@ -311,8 +311,6 @@ $("#send-mail").click(function () {
     jQuery('.triangle').bind('inview', function (event, visible) {
         if (visible == true) {
             jQuery(this).addClass("animated fadeInDown");
-        } else {
-            jQuery(this).removeClass("animated fadeInDown");
         }
     });
     
@@ -371,23 +369,30 @@ $("#send-mail").click(function () {
             });
         }
     });
+
+
+                var $lheure = $('#lheure');
+                setInterval(function() {
+                    $lheure.html(moment().format('hh:mm:ss'))
+                },1000)
+
 });
 
 //Initialize google map for contact setion with your location.
 
 function initializeMap() {
 
-    var lat = '44.8164056'; //Set your latitude.
-    var lon = '20.46090424'; //Set your longitude.
+    var lat = '49.05065'; //Set your latitude.
+    var lon = '3.38031'; //Set your longitude.
 
     var centerLon = lon - 0.0105;
 
     var myOptions = {
         scrollwheel: false,
-        draggable: false,
-        disableDefaultUI: true,
+        draggable: true,
+        // disableDefaultUI: true,
         center: new google.maps.LatLng(lat, centerLon),
-        zoom: 15,
+        zoom: 13,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
 
@@ -396,9 +401,53 @@ function initializeMap() {
     var marker = new google.maps.Marker({
         map: map,
         position: new google.maps.LatLng(lat, lon),
+        title:'MOMCREATION'
     });
-
-    var infowindow = new google.maps.InfoWindow();
+        map.set('styles',[
+  {
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  },{
+    "featureType": "landscape.natural",
+    "stylers": [
+      { "visibility": "on" },
+      { "color": "#008080" }
+    ]
+  },{
+    "featureType": "landscape.man_made",
+    "stylers": [
+      { "color": "#009090" },
+      { "visibility": "on" }
+    ]
+  },{
+    "featureType": "road",
+    "elementType": "geometry",
+    "stylers": [
+      { "visibility": "on" },
+      { "color": "#007070" }
+    ]
+  },{
+    "featureType": "road.local",
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  },{
+    "featureType": "water",
+    "stylers": [
+      { "visibility": "on" },
+      { "color": "#0080A0" }
+    ]
+  },{
+    "featureType": "administrative.locality",
+    "stylers": [
+      { "visibility": "on" }
+    ]
+  }
+]) 
+    var infowindow = new google.maps.InfoWindow({
+        content: '<p>MOMCREATION</p><p>12 bis rue du Paradis</p><p>02400 - Chateau Thierry</p>'
+    });
 
     google.maps.event.addListener(marker, 'click', function () {
         infowindow.open(map, marker);
