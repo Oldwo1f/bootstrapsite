@@ -12,7 +12,9 @@
 .navbar .brand{  text-shadow: none; }
 .momlogo{font-size : 48px;text-align:center;line-height: 1em; color:teal;text-decoration:none; }
 .momlogo:before{font-family : 'momfont';content:'l';}
-
+div#service {padding-bottom: 130px;}
+.project-info a{color:white;}
+.da-slide img{ margin-right:60px;}
 
 .deco{font-size : 10em;text-align:center;line-height: 1em;}
 .decoapi:before{font-family : 'momfont';content:'p';}

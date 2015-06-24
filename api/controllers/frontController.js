@@ -6,7 +6,7 @@ var truncate = require('html-truncate');
 
 module.exports={
 	home:function(req,res,next) {
-		req.locale = req.locale || 'en'
+		// req.locale = req.locale || 'en'
 		moment.locale(req.locale);
 		async.parallel({
 			projs:function  (cb) {
