@@ -236,15 +236,19 @@ $("#send-mail").click(function () {
             var dataString = $('#contact-form').serialize(); // Collect data from form
             $.ajax({
                 type: "POST",
-                url: $('#contact-form').attr('action'),
+                url: '/contactEmail',
                 data: dataString,
                 timeout: 6000,
                 error: function (request, error) {
+                    console.log("ERROR");
 
                 },
                 success: function (response) {
-                    response = $.parseJSON(response);
-                    if (response.success) {
+                    console.log("SUCCESS");
+                    console.log(response);
+                    // response = $.parseJSON(response);
+                    if (response ==="mail sended") {
+                        console.log('here');
                         $('#successSend').show();
                         $("#name").val('');
                         $("#email").val('');

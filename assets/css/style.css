@@ -939,3 +939,6 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 .gmnoprint div {
     background:none !important;
 }
+
+.contact-info a:hover{color:white};
+.contact-info a i{margin-right:7px;};

@@ -1066,47 +1066,44 @@ module.exports={
 		
 
 // 	},
-// 	contactEmail:function(req,res,next) {
+	contactEmail:function(req,res,next) {
 
-// 		console.log('contactEmailcontactEmailcontactEmailcontactEmailcontactEmailcontactEmail');
-// 		console.log(req.body.message);
-// 		console.log(req.body.name);
-// 		console.log(req.body.email);
-// 		if(req.body.message && req.body.name && req.body.email)
-// 		{
-// 			console.log('contactEmail ----> true');
-// 			var transporter = nodemailer.createTransport({
-// 				    service: 'Gmail',
-// 				    auth: {
-// 				        user: sails.config.MAIN_EMAIL_GOOGLE,
-// 						pass: sails.config.MAIN_EMAIL_GOOGLE_PWD
-// 				    }
-// 				})
+		console.log('contactEmailcontactEmailcontactEmailcontactEmailcontactEmailcontactEmail');
+		console.log(req.body.message);
+		console.log(req.body.name);
+		console.log(req.body.email);
+		if(req.body.message && req.body.name && req.body.email)
+		{
+			console.log('contactEmail ----> true');
+			var transporter = nodemailer.createTransport({
+				    service: 'Gmail',
+				    auth: {
+				        user: sails.config.MAIN_EMAIL_GOOGLE,
+						pass: sails.config.MAIN_EMAIL_GOOGLE_PWD
+				    }
+				})
 			
-// 			var mailOptions = {
-// 			    from: req.body.name+' <'+req.body.email+'>', // sender address
-// 			    to: sails.config.MAIN_EMAIL, // list of receivers
-// 			    subject: 'Site - '+ sails.config.COMPANY_NAME +' - contact : '+ req.body.name +' - '+req.body.subject, // Subject line
-// 			    text: req.body.message // html body
-// 			};
-// 			// send mail with defined transport object
-// 			transporter.sendMail(mailOptions, function(error, info){
+			var mailOptions = {
+			    from: req.body.name+' <'+req.body.email+'>', // sender address
+			    to: sails.config.MAIN_EMAIL, // list of receivers
+			    subject: 'Site - '+ sails.config.COMPANY_NAME +' - contact : '+ req.body.name , // Subject line
+			    text: req.body.message // html body
+			};
+			// send mail with defined transport object
+			transporter.sendMail(mailOptions, function(error, info){
 
-// 				console.log('here');
-// 				console.log(error);
-// 				console.log(info);
-// 			    if(error){
-// 			        res.status(400).send('mail error');
-// 			    }else{
+			    if(error){
+			        res.status(400).send('mail error');
+			    }else{
 
-// 					res.status(200).send('mail sended');
+					res.status(200).send('mail sended');
 
-// 			    }
-// 			});
-// 		}else{
-// 			res.status(400).send('field error');
-// 		}
-// 	},
+			    }
+			});
+		}else{
+			res.status(400).send('field error');
+		}
+	},
 // 	contact:function(req,res) {
 // 			return res.view('contact',{baseurl:'',title:'Contact - Street Colors',keyword:'Street Colors, street, colors, couleurs, grafitis,grafiti,tag,graff,graf,blog, Associationstreetcolor, Associations Chateau Thierry',description:'Contact Street colors'});
 // 	},	
