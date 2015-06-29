@@ -420,7 +420,7 @@ p {
 /* Third section use bacground image */
 .third-section {
     padding-bottom: 70px;
-    background: #181A1C url(../images/brand-bg.png) no-repeat center;
+    background: #181A1C url(../images/mom-momcreation.jpg) no-repeat center bottom;
     border-top:6px solid teal;
 }
 .third-section .container {
