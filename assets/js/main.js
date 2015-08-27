@@ -151,7 +151,8 @@ var main = (function($) { var _ = {
 					'<div class="inner">' +
 						'<div class="nav-next"></div>' +
 						'<div class="nav-previous"></div>' +
-						'<div class="toggle"></div>' +
+						'<div class="toggle"><a title="Plein écran"  class="icon"></a></div>' +
+						'<div class="download"><a title="Télécharger l\'image" href="" download="Photo" class="icon fa-download"></a></div>' +
 					'</div>' +
 				'</div>'
 			).appendTo(_.$body);
@@ -586,12 +587,32 @@ var main = (function($) { var _ = {
 									newSlide.$slide.addClass('loading');
 
 								// Wait for it to load.
-									$('<img src="' + newSlide.url + '" />').on('load', function() {
+									var myimg = $('<img src="' + newSlide.url + '" />').on('load', function() {
+
+									// var linkToDownload = newSlide.url.replace('Comp','Aurrillac2015')
+									var linkToDownload = newSlide.url.replace('Comp','Comp')
+console.log(linkToDownload);
 									//window.setTimeout(function() {
+								console.log('HERERERERERERERERE');
+								console.log(newSlide.url);
+								console.log($('#viewer .image'));
+								$('#viewer .image').css({'text-align':'center'})
+								$('#viewer .image').append(myimg)
+								$('#viewer .download a').attr('href',linkToDownload)
+								var iWidth = $(myimg).width()
+								var iHeight = $(myimg).height()
+								console.log(iHeight +' < ' +$(window).height());
+								if(iWidth >= iHeight && iHeight < $(window).height()){
+									$('#viewer .image').find('img').css({'width':'100%','height':'auto'})
+								}else
+								{
+									$('#viewer .image').find('img').css({'width':'auto','height':'100%'})
+								}
+								
 
 										// Set background image.
-											newSlide.$slideImage
-												.css('background-image', 'url(' + newSlide.url + ')');
+											// newSlide.$slideImage
+											// 	.css('background-image', "url('" + newSlide.url + "')");
 
 										// Mark as loaded.
 											newSlide.loaded = true;
