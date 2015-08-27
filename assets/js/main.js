@@ -590,7 +590,7 @@ var main = (function($) { var _ = {
 									var myimg = $('<img src="' + newSlide.url + '" />').on('load', function() {
 
 									// var linkToDownload = newSlide.url.replace('Comp','Aurrillac2015')
-									var linkToDownload = newSlide.url.replace('Comp','Comp')
+									var linkToDownload = newSlide.url.replace('Comp','Big')
 console.log(linkToDownload);
 									//window.setTimeout(function() {
 								console.log('HERERERERERERERERE');

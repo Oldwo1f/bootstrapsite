@@ -8,7 +8,7 @@ module.exports={
 
 
 		console.log('SERVE DOCUMENT');
-		var filePath = sails.config.PATH_TO_ADMIN+'uploads/files/'+req.params.name;
+		var filePath = 'uploads/'+req.params.name;
 		// sails.log(filePath);
 		console.log('filePath',filePath);
 	    var stat = fs.statSync(filePath);
