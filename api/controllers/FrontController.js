@@ -11,7 +11,7 @@ module.exports={
 	
 		console.log('HOME');
 
-		res.send('HOME')
+		res.render('index')
 
 
 	},
