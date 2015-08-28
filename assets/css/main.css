@@ -1280,12 +1280,12 @@
 }
 
 /*rouge VErt*/
-#main{background : #4e6612;}
+/*#main{background : #4e6612;}
 h1{color : #8f4306;}
 body{color : #e8f0c9;}
 a:hover{color : #8f4306;}
 strong{color : #e8f0c9; font-style: italic;}
-#thumbnails article .thumbnail:before {box-shadow: inset 0 0 0 2px #8f4306, inset 0 0 0px 3px rgba(0, 0, 0, 0.15);}
+#thumbnails article .thumbnail:before {box-shadow: inset 0 0 0 2px #8f4306, inset 0 0 0px 3px rgba(0, 0, 0, 0.15);}*/
 
 /*#main{background : #3b3d10;}
 body{color : #c7c7b1;}
@@ -1312,4 +1312,34 @@ strong{color : #f2eee6; font-style: italic;}
 #thumbnails article .thumbnail:before {box-shadow: inset 0 0 0 2px #2e3036, inset 0 0 0px 3px rgba(0, 0, 0, 0.15);}
 */
 
+/*lydie*/
+/*#main{background : #649985;}
+h1{color : #e96196;}
+a:hover{color : #e96196;}
+body{color : #3c5b5e;}
+strong{color : #3c5b5e; font-style: italic;}
+#thumbnails article .thumbnail:before {box-shadow: inset 0 0 0 2px #e96196, inset 0 0 0px 3px rgba(0, 0, 0, 0.15);}*/
 
+/*ocean*/
+/*#main{background : #1c6e62;}
+h1{color : #ed811d;}
+a:hover{color : #ed811d;}
+body{color : #0e5480;}
+strong{color : #0e5480; font-style: italic;}
+#thumbnails article .thumbnail:before {box-shadow: inset 0 0 0 2px #ed811d, inset 0 0 0px 3px rgba(0, 0, 0, 0.15);}*/
+
+/*lac*/
+/*#main{background : #f2f2cb;}
+h1{color : #6b754a;}
+a:hover{color : #6b754a;}
+body{color : #fabf1e;}
+strong{color : #fabf1e; font-style: italic;}
+#thumbnails article .thumbnail:before {box-shadow: inset 0 0 0 2px #6b754a, inset 0 0 0px 3px rgba(0, 0, 0, 0.15);}
+*/
+/*prune*/
+#main{background : #995e89;}
+h1{color : #493354;}
+a:hover{color : #493354;}
+body{color : #e3dfda;}
+strong{color : #e3dfda; font-style: italic;}
+#thumbnails article .thumbnail:before {box-shadow: inset 0 0 0 2px #493354, inset 0 0 0px 3px rgba(0, 0, 0, 0.15);}
