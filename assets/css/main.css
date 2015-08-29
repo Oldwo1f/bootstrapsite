@@ -1278,7 +1278,7 @@
 .toggle .icon:hover {
     color: #de8156;
 }
-
+ p small{font-size: 0.6em;}
 /*rouge VErt*/
 /*#main{background : #4e6612;}
 h1{color : #8f4306;}
